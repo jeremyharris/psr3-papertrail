@@ -1,0 +1,26 @@
+{
+    "name": "jeremyharris/psr3-papertrail",
+    "description": "PSR-3 logger for Papertrail",
+    "keywords": [
+        "psr-3", "papertrail"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "psr/log": "^1.0.0",
+        "phpunit/phpunit": "^5.7.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeremyHarris\\Papertrail\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeremyHarris\\Papertrail\\Test\\": "tests"
+        }
+    }
+}
