@@ -41,7 +41,9 @@ manually define them.
 - `string $hostname`: Hostname to use. Uses `gethostname()` by default
 - `string $facility`: Facility to use. Uses local0 (16) by default. See [RFC 3164][3] for details
 
+*This code was mostly taken from the Papertrail docs and [this][4] gist.*
 
 [1]: http://www.php-fig.org/psr/psr-3/
 [2]: https://papertrailapp.com
 [3]: https://tools.ietf.org/html/rfc3164
+[4]: https://gist.github.com/troy/2220679
