@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/jeremyharris/psr3-papertrail.svg?branch=master)](https://travis-ci.org/jeremyharris/psr3-papertrail)
+[![codecov](https://codecov.io/gh/jeremyharris/psr3-papertrail/branch/master/graph/badge.svg)](https://codecov.io/gh/jeremyharris/psr3-papertrail)
+[![Packagist](https://img.shields.io/packagist/dt/jeremyharris/psr3-papertrail.svg)](https://packagist.org/packages/jeremyharris/psr3-papertrail)
+[![license](https://img.shields.io/github/license/jeremyharris/psr3-papertrail.svg)]()
 
 # PSR-3 Papertrail Logger
 
