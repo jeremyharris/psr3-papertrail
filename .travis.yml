@@ -9,6 +9,9 @@ sudo: false
 
 matrix:
   fast_finish: true
+  include:
+    - php: 7.1
+      env: COVERAGE=1
 
 install:
   - composer self-update
@@ -18,7 +21,11 @@ before_script:
   - phpenv rehash
 
 script:
-  - vendor/bin/phpunit
+  - if [[ $COVERAGE == 1 ]]; then phpdbg -qrr vendor/bin/phpunit --coverage-clover=coverage.xml; fi
+  - if [[ $COVERAGE != 1 ]]; then vendor/bin/phpunit; fi
+
+after_success:
+  - if [[ $COVERAGE == 1 ]]; then bash <(curl -s https://codecov.io/bash); fi
 
 notifications:
   email: false
